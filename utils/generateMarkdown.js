@@ -1,16 +1,16 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  const title = data.title;
-  const description = data.description;
-  const install = data.install;
-  const usage = data.usage;
-  const contribute = data.contribute;
-  const test = data.test;
-  const github = data.github;
-  const email = data.email;
-  const license = data.license;
-  const year = data.year;
-  const name = data.name;
+  const title = data.title.trim();
+  const description = data.description.trim();
+  const install = data.install.trim();
+  const usage = data.usage.trim();
+  const contribute = data.contribute.trim();
+  const test = data.test.trim();
+  const github = data.github.trim();
+  const email = data.email.trim();
+  const license = data.license.trim();
+  const year = data.year.trim();
+  const name = data.name.trim();
   let licenseText = "";
   let badge = "";
   switch (license) {
@@ -44,36 +44,25 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n`;
       break;
   }
-  let result = `# ${title} ${badge}\n`;
+  let result = `# ${title} ${badge}\n\n`;
 
   if (description !== "") {
-    result += `## Description\n
-    ${description}\n`;
+    result += `## Description\n\n${description}\n\n`;
   }
   if (install !== "") {
-    result += `## Installation\n
-    ${install}\n`;
+    result += `## Installation\n\n${install}\n\n`;
   }
   if (usage !== "") {
-    result += `## Usage\n
-    ${usage}\n`;
+    result += `## Usage\n\n${usage}\n\n`;
   }
   if (contribute !== "") {
-    result += `## Contributing\n
-    ${contribute}\n`;
+    result += `## Contributing\n\n${contribute}\n\n`;
   }
   if (test !== "") {
-    result += `## Tests\n
-    ${test}\n`;
+    result += `## Tests\n\n${test}\n\n`;
   }
-  result += `## License\n
-  ${licenseText}\n`;
-  result += `## Questions\n
-  Reach out to me through email or on GitHub!\n
-  ### Github\n
-  https://github.com/${github}\n
-  ### Email\n
-  ${email}\n`;
+  result += `## License\n\n${licenseText}\n`;
+  result += `## Questions\n\nReach out to me through email or on GitHub!\n\n### Github\n\nhttps://github.com/${github}\n\n### Email\n\n${email}\n`;
 
   return result;
 }
