@@ -11,8 +11,15 @@ function generateMarkdown(data) {
   const license = data.license.trim();
   const year = data.year.trim();
   const name = data.name.trim();
+  let descriptionText = "";
+  let installText = "";
+  let usageText = "";
+  let contributeText = "";
+  let testText = "";
   let licenseText = "";
   let badge = "";
+  let tableOfContents = "## Table of Contents\n\n";
+
   switch (license) {
     case "MIT License":
       badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
@@ -47,23 +54,37 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   let result = `# ${title} ${badge}\n\n`;
 
   if (description !== "") {
-    result += `## Description\n\n${description}\n\n`;
+    descriptionText += `${description}\n\n`;
   }
   if (install !== "") {
-    result += `## Installation\n\n${install}\n\n`;
+    installText += `## Installation\n\n${install}\n\n`;
+    tableOfContents += `[Installation](##Installation)\n`;
   }
   if (usage !== "") {
-    result += `## Usage\n\n${usage}\n\n`;
+    usageText += `## Usage\n\n${usage}\n\n`;
+    tableOfContents += `[Usage](##Usage)\n`;
   }
   if (contribute !== "") {
-    result += `## Contributing\n\n${contribute}\n\n`;
+    contributeText += `## Contributing\n\n${contribute}\n\n`;
+    tableOfContents += `[Contributing](##Contributing)\n`;
   }
   if (test !== "") {
-    result += `## Tests\n\n${test}\n\n`;
+    testText += `## Tests\n\n${test}\n\n`;
+    tableOfContents += `[Tests](##Tests)\n`;
   }
-  result += `## License\n\n${licenseText}\n`;
-  result += `## Questions\n\nReach out to me through email or on GitHub!\n\n### Github\n\nhttps://github.com/${github}\n\n### Email\n\n${email}\n`;
+  tableOfContents += `[License](##License)\n`;
+  tableOfContents += `[Questions](##Questions)\n`;
 
+  result +=
+    descriptionText +
+    tableOfContents +
+    installText +
+    usageText +
+    contributeText +
+    testText;
+  result += `## License\n\n${licenseText}\n`;
+
+  result += `## Questions\n\nReach out to me through email or on GitHub!\n\n### Github\n\nhttps://github.com/${github}\n\n### Email\n\n${email}\n`;
   return result;
 }
 
