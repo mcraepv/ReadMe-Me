@@ -75,7 +75,21 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((answers) => {
     if (answers.title === "") {
-      return console.log("Your Project must have a title.");
+      return console.log("Your project must have a title.");
+    }
+    if (answers.year === "") {
+      return console.log("Your copyright needs a year.");
+    }
+    if (answers.name === "") {
+      return console.log("Your copyright needs a name.");
+    }
+    if (answers.github === "") {
+      return console.log("Your project must link to a GitHub account.");
+    }
+    if (answers.email === "") {
+      return console.log(
+        "Your project must include an email to reach you for questions."
+      );
     }
     writeToFile("README.md", answers);
     console.log(answers);
