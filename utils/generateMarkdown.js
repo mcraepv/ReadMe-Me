@@ -58,22 +58,22 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
   }
   if (install !== "") {
     installText += `## Installation\n\n${install}\n\n`;
-    tableOfContents += `[Installation](##Installation)\n`;
+    tableOfContents += `[Installation](##-installation)\n`;
   }
   if (usage !== "") {
     usageText += `## Usage\n\n${usage}\n\n`;
-    tableOfContents += `[Usage](##Usage)\n`;
+    tableOfContents += `[Usage](##-usage)\n`;
   }
   if (contribute !== "") {
     contributeText += `## Contributing\n\n${contribute}\n\n`;
-    tableOfContents += `[Contributing](##Contributing)\n`;
+    tableOfContents += `[Contributing](##-contributing)\n`;
   }
   if (test !== "") {
     testText += `## Tests\n\n${test}\n\n`;
-    tableOfContents += `[Tests](##Tests)\n`;
+    tableOfContents += `[Tests](##-tests)\n`;
   }
-  tableOfContents += `[License](##License)\n`;
-  tableOfContents += `[Questions](##Questions)\n`;
+  tableOfContents += `[License](##-license)\n`;
+  tableOfContents += `[Questions](##-questions)\n`;
 
   result +=
     descriptionText +
