@@ -34,16 +34,20 @@ const questions = [
     message: "How can a user test your project?",
   },
   {
+    type: "input",
+    name: "year",
+    message: "Please enter the copyright year.",
+  },
+  {
+    type: "input",
+    name: "name",
+    message: "What is your name (for copyright)?",
+  },
+  {
     type: "list",
     name: "license",
     message: "Which license would you like to use?",
-    choices: [
-      "Apache License 2.0",
-      "MIT License",
-      "Mozilla Public License 2.0",
-      "GNU GPL",
-      "New BSD License",
-    ],
+    choices: ["MIT License", "Apache 2.0", "BSD 3-Clause License"],
   },
   {
     type: "input",
