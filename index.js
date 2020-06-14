@@ -6,7 +6,7 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "What is your project's name?",
+    message: "What is your project's name? (required)",
   },
   {
     type: "input",
@@ -36,12 +36,12 @@ const questions = [
   {
     type: "input",
     name: "year",
-    message: "Please enter the copyright year.",
+    message: "Please enter the copyright year. (required)",
   },
   {
     type: "input",
     name: "name",
-    message: "What is your name (for copyright)?",
+    message: "What is your full name? (required for copyright)",
   },
   {
     type: "list",
@@ -52,12 +52,12 @@ const questions = [
   {
     type: "input",
     name: "github",
-    message: "What is your GitHub username?",
+    message: "What is your GitHub username? (required)",
   },
   {
     type: "input",
     name: "email",
-    message: "What is your email address?",
+    message: "What is your email address? (required)",
   },
 ];
 
@@ -65,9 +65,7 @@ const questions = [
 function writeToFile(fileName, data) {
   const markdown = generateMarkdown(data);
   fs.writeFile(fileName, markdown, (err) => {
-    if (err) {
-      throw err;
-    }
+    err ? console.log(err) : null;
   });
 }
 
@@ -92,7 +90,6 @@ function init() {
       );
     }
     writeToFile("README.md", answers);
-    console.log(answers);
   });
 }
 

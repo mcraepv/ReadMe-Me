@@ -1,31 +1,24 @@
-# ReadMe-Me [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Foobar [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-ReadMe-Me is a node application that builds a customizable README.md file for a project through a series of questions.
+asdfasdf
 
 ## Table of Contents
 
-- [Installation](#installation)
+* [Installation](#installation)
 
-- [Usage](#usage)
+* [Contributing](#contributing)
 
-- [License](#license)
+* [License](#license)
 
-- [Questions](#questions)
+* [Questions](#questions)
 
 ## Installation
 
-Clone the repository, and make sure you have node and the necessary modules installed before you use it! (Hint: run npm install once you clone the repository.)
+asdfasdf
 
-## Usage
+## Contributing
 
-Once you have everything installed, run "node index.js" in your console and answer the questions.
-![App initialization](./assets/app-init.png)
-![App demo](./assets/app-demo.png)
-
-The ReadMe file will be named README.md, and will be in the cloned repository once its generated.
-![Sample Readme](./assets/sample-readme.png)
-
-[Demo Video](https://youtu.be/6LAP2SVTSJg)
+asdfsadf
 
 ## License
 
