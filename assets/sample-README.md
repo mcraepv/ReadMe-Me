@@ -1,12 +1,16 @@
-# Foobar [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Sample README [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-asdfasdf
+samplesamplesample
 
 ## Table of Contents
 
 * [Installation](#installation)
 
+* [Usage](#usage)
+
 * [Contributing](#contributing)
+
+* [Tests](#tests)
 
 * [License](#license)
 
@@ -14,15 +18,23 @@ asdfasdf
 
 ## Installation
 
-asdfasdf
+sample
+
+## Usage
+
+sample
 
 ## Contributing
 
-asdfsadf
+sample
+
+## Tests
+
+sample
 
 ## License
 
-Copyright 2020 Charles McRae Peavy
+Copyright 2020 John Smith
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -36,8 +48,8 @@ Reach out to me through email or on GitHub!
 
 ### Github
 
-https://github.com/mcraepv
+https://github.com/john-s1234
 
 ### Email
 
-mcraepv@gmail.com
+johnsmith@sample.com
