@@ -1,12 +1,10 @@
-# ManageMe [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# SQL Burger [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-ManageMe is a MySQL node CLI that allows a user to create and update a company database. The MySQL schema allow the creation of departments, roles, managers and employees, with all the information that accompanies those data entries.
+SQL Burger is a demonstration of the model-view-controller design pattern. The app uses MySQL for the database, Express.js for the server framework, Handlebars for HTML templating and Bootstrap for front-end design. Users can add burgers to a list that they'd like to try. Once added to the database, the burgers can be marked as "eaten" and moved to a separate column. Users can then delete burgers from the database.
 
 ## Table of Contents
 
 * [Installation](#installation)
-
-* [Usage](#usage)
 
 * [License](#license)
 
@@ -14,11 +12,7 @@ ManageMe is a MySQL node CLI that allows a user to create and update a company d
 
 ## Installation
 
-Clone my repo and run npm install to get all the dependencies.
-
-## Usage
-
-Just run "npm start" to initialize the CLI.
+Visit the live site linked above or clone my repo to check out my code!
 
 ## License
 
