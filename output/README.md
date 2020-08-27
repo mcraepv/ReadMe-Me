@@ -1,6 +1,6 @@
-# SQL Burger [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Manage Me 2.0 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-SQL Burger is a demonstration of the model-view-controller design pattern. The app uses MySQL for the database, Express.js for the server framework, Handlebars for HTML templating and Bootstrap for front-end design. Users can add burgers to a list that they'd like to try. Once added to the database, the burgers can be marked as "eaten" and moved to a separate column. Users can then delete burgers from the database.
+This app is a demonstration of basic front end React functionality. Employees are loaded in through a randomizer API. A user can sort by name or state.
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@ SQL Burger is a demonstration of the model-view-controller design pattern. The a
 
 ## Installation
 
-Visit the live site linked above or clone my repo to check out my code!
+Clone my repo to check out my code, or visit the link above to see it in action.
 
 ## License
 
